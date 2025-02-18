@@ -49,7 +49,33 @@ public class FunStatClient {
 
     // 1 Получить информацию о пользователе по username.
     public JsonNode resolveUsername(String username) throws IOException {
-        return sendGetRequest("api/v1/users/resolve_username?name=" + username);
+        HttpUrl url = HttpUrl.parse(BASE_URL)
+                .newBuilder()
+                .addPathSegments("api/v1/users/resolve_username")
+                .addQueryParameter("name", username)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", "Bearer " + API_KEY)
+                .addHeader("Accept", "application/json")
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            if (response.body() == null) {
+                throw new IOException("Пустой ответ от сервера");
+            }
+            String responseBody = response.body().string();
+
+            if (!response.isSuccessful()) {
+                System.out.println("Ошибка запроса: " + response.code());
+                System.out.println("Ответ сервера: " + responseBody);
+                throw new IOException("Ошибка запроса: " + response.code());
+            }
+
+            return objectMapper.readTree(responseBody);
+//        return sendGetRequest("api/v1/users/resolve_username?name=" + username);
+        }
     }
 
     // 2 Получить основную информацию о пользователе по ID.
@@ -64,7 +90,33 @@ public class FunStatClient {
 
     // 4 Получить базовую информацию о пользователе по ID.
     public JsonNode getUserBasicInfo(String userId) throws IOException {
-        return sendGetRequest("api/v1/users/basic_info_by_id?id=" + userId);
+        HttpUrl url = HttpUrl.parse(BASE_URL)
+                .newBuilder()
+                .addPathSegments("api/v1/users/basic_info_by_id")
+                .addQueryParameter("id", userId)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", "Bearer " + API_KEY)
+                .addHeader("Accept", "application/json")
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            if (response.body() == null) {
+                throw new IOException("Пустой ответ от сервера");
+            }
+            String responseBody = response.body().string();
+
+            if (!response.isSuccessful()) {
+                System.out.println("Ошибка запроса: " + response.code());
+                System.out.println("Ответ сервера: " + responseBody);
+                throw new IOException("Ошибка запроса: " + response.code());
+            }
+
+            return objectMapper.readTree(responseBody);
+//        return sendGetRequest("api/v1/users/basic_info_by_id?id=" + userId);
+        }
     }
 
     // 5 Получить количество групп пользователя.
