@@ -7,7 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 
 public class FunStatClient {
-    private static final String BASE_URL = "https://funstat.info";
+    private static final String BASE_URL = "https://funstat.info"; //Базовый url
     private static final String API_KEY = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1Mzk3NTQ4MTMiLCJqdGkiOiIxMmY0YTZhMy03ZGI2LTRiZjMtYTZjOS1iMGIwN2ZmMTM0ZjciLCJleHAiOjE3NzEzNDY3Njl9.oq7WT75SUdcHj__B06Ls_m6EzFPZQ5plGWiBQGIeLTiPnLRtZnhKgPFK3nc9Auw8nmgZwmfYhcQGJVx5c_osQKRWdFVM65W4nFZtpgdaCtJHFHwgvOakFr1upWnzqI7NOLEQl7r_2RpYcn87ILCzUJGJ9kyHe7HdBasqBYUjhO4";
 
     private final OkHttpClient client;
