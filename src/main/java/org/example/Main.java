@@ -7,6 +7,7 @@ import java.io.IOException;
 public class Main {
     public static void main(String[] args) {
         String helpText = "ПЕРЕЧЕНЬ ДОСТУПНЫХ API-МЕТОДОВ:\n\n" +
+                "ПОЛЬЗОВАТЕЛИ:\n" +
                 "1.  ВРЕМЕННО НЕ РАБОТАЕТ (ЦЕНА 0.25)     /api/v1/users/resolve_username     получить информацию о пользователе\n" +
                 "2.                       (ЦЕНА 0)        /api/v1/users/{id}/stats_min       получить основную информацию о пользователе \n" +
                 "3.                       (ЦЕНА 1)        /api/v1/users/{id}/stats           получить полную информацию о пользователе\n" +
@@ -16,7 +17,9 @@ public class Main {
                 "7.                       (ЦЕНА 0)        /api/v1/users/{id}/messages_count  получить количество сообщений пользователя\n" +
                 "8.                       (ЦЕНА 5)        /api/v1/users/{id}/groups          получить известные группы пользователя\n" +
                 "9.                       (ЦЕНА 3)        /api/v1/users/{id}/names           получить историю изменений имени пользователя \n" +
-                "10.                      (ЦЕНА 3)        /api/v1/users/{id}/usernames       получить историю изменений юзернейма пользователя ";
+                "10.                      (ЦЕНА 3)        /api/v1/users/{id}/usernames       получить историю изменений юзернейма пользователя \n" +
+                "ЧАТЫ/ГРУППЫ: \n" +
+                "11.                      (ЦЕНА 0)        //api/v1/groups/{id}               получить основную информацию, ссылки и статистику за сутки";
         System.out.println(helpText);
         Scanner sc = new Scanner(System.in);
         System.out.print("\nВведите № метода: ");
@@ -26,6 +29,7 @@ public class Main {
         try {
             String userId = "539754813"; // ID пользователя
             String username = "popilroman";
+            String groupId = " 1343455239";
             switch (number) {
                 case (1):
                     System.out.println(client.resolveUsername(username).toPrettyString());
@@ -57,6 +61,8 @@ public class Main {
                 case (10):
                     System.out.println(client.getUsernameHistory(userId).toPrettyString());
                     break;
+                case (11):
+                    System.out.println(client.getGroupBasicInfo(groupId).toPrettyString());
                 default:
                     break;
             }

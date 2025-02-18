@@ -96,4 +96,9 @@ public class FunStatClient {
     public JsonNode getUsernameHistory(String userId) throws IOException {
         return sendGetRequest("api/v1/users/" + userId + "/usernames");
     }
+
+    // 11 Получить основную информацию, ссылки и статистику за сутки
+    public JsonNode getGroupBasicInfo(String groupId) throws IOException {
+        return sendGetRequest("/api/v1/groups/" + groupId);
+    }
 }
