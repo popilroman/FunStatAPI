@@ -1,0 +1,33 @@
+{
+  "success" : true,
+  "tech" : {
+    "request_cost" : 0,
+    "current_ballance" : 18,
+    "request_duration" : "00:00:00.0553818"
+  },
+  "data" : {
+    "is_cyrillic_primary" : null,
+    "lang_code" : null,
+    "unique_percent" : null,
+    "circle_count" : 0,
+    "voice_count" : 0,
+    "reply_percent" : 0,
+    "media_percent" : 0,
+    "link_percent" : 0,
+    "favorite_chat" : null,
+    "media_usage" : null,
+    "id" : 539754813,
+    "first_name" : "Roman",
+    "last_name" : null,
+    "is_bot" : false,
+    "is_active" : true,
+    "first_msg_date" : null,
+    "last_msg_date" : null,
+    "total_msg_count" : 0,
+    "msg_in_groups_count" : 0,
+    "adm_in_groups" : 0,
+    "usernames_count" : 1,
+    "names_count" : 1,
+    "total_groups" : 3
+  }
+}

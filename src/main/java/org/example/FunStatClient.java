@@ -5,6 +5,9 @@ import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 public class FunStatClient {
     private static final String BASE_URL = "https://funstat.info"; //Базовый url
@@ -123,8 +126,38 @@ public class FunStatClient {
     }
 
     // 6 Получить сообщения пользователя.
-    public JsonNode getUserMessages(String userId) throws IOException {
-        return sendGetRequest("api/v1/users/" + userId + "/messages");
+//    public JsonNode getUserMessages(String userId) throws IOException {
+//        return sendGetRequest("api/v1/users/" + userId + "/messages");
+//    }
+    public JsonNode getUserMessages(String username, String page, String pageSize) throws IOException {
+        HttpUrl url = HttpUrl.parse(BASE_URL)
+                .newBuilder()
+                .addPathSegments("api/v1/users/resolve_username")
+                .addQueryParameter("name", username)
+                .addQueryParameter("page", page)
+                .addQueryParameter("pageSize", pageSize)
+                .build();
+
+        Request request = new Request.Builder()
+                .url(url)
+                .addHeader("Authorization", "Bearer " + API_KEY)
+                .addHeader("Accept", "application/json")
+                .build();
+
+        try (Response response = client.newCall(request).execute()) {
+            if (response.body() == null) {
+                throw new IOException("Пустой ответ от сервера");
+            }
+            String responseBody = response.body().string();
+
+            if (!response.isSuccessful()) {
+                System.out.println("Ошибка запроса: " + response.code());
+                System.out.println("Ответ сервера: " + responseBody);
+                throw new IOException("Ошибка запроса: " + response.code());
+            }
+
+            return objectMapper.readTree(responseBody);
+        }
     }
 
     // 7 Получить количество сообщений пользователя.
@@ -150,5 +183,11 @@ public class FunStatClient {
     // 11 Получить основную информацию, ссылки и статистику за сутки
     public JsonNode getGroupBasicInfo(String groupId) throws IOException {
         return sendGetRequest("/api/v1/groups/" + groupId);
+    }
+
+    public static void saveToJSONFile(JsonNode jsonNode, String filePath) throws IOException {
+        String jsonString = jsonNode.toPrettyString();
+        Path path = Paths.get(filePath);
+        Files.write(path, jsonString.getBytes());
     }
 }
