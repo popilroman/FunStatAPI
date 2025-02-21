@@ -6,6 +6,9 @@ import org.example.FunStatClient;
 import java.io.IOException;
 
 public class Main {
+
+    private final static int PAGE_SIZE = 1000;
+
     public static void main(String[] args) {
         String helpText = "ПЕРЕЧЕНЬ ДОСТУПНЫХ API-МЕТОДОВ:\n" +
                 "ПОЛЬЗОВАТЕЛИ:\n" +
@@ -31,47 +34,36 @@ public class Main {
         try {
             switch (number) {
                 case (1):
-//                    System.out.println(client.resolveUsername(inputUserUsername()).toPrettyString());
                     client.saveToJSONFile(client.resolveUsername(inputUserUsername()), "resolveUsername.json");
                     break;
                 case (2):
-//                    System.out.println(client.getUserStatsMin(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserStatsMin(inputUserId()), "data/userStatsMin.json");
                     break;
                 case (3):
-//                    System.out.println(client.getUserStats(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserStats(inputUserId()), "data/userStats.json");
                     break;
                 case (4):
-//                    System.out.println(client.getUserBasicInfo(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserBasicInfo(inputUserId()), "data/userBasicInfo.json");
                     break;
                 case (5):
-//                    System.out.println(client.getUserGroupsCount(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserGroupsCount(inputUserId()), "data/groupsCount.json");
                     break;
                 case (6):
-//                    System.out.println(client.getUserMessages(inputUserId(), inputPage(), inputPageSize()).toPrettyString());
-                    client.saveToJSONFile(client.getUserMessages(inputUserId(), inputPage(), inputPageSize()), "data/messages.json");
+                    client.saveToJSONFile(client.getUserMessages(inputUserId(), inputPage(), String.valueOf(PAGE_SIZE)), "data/messages.json");
                     break;
                 case (7):
-//                    System.out.println(client.getUserMessagesCount(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserMessagesCount(inputUserId()), "data/messagesCount.json");
                     break;
                 case (8):
-//                    System.out.println(client.getUserGroups(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserGroups(inputUserId()), "data/groups.json");
                     break;
                 case (9):
-//                    System.out.println(client.getUserNamesHistory(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUserNamesHistory(inputUserId()), "data/namesHistory.json");
                     break;
                 case (10):
-//                    System.out.println(client.getUsernameHistory(inputUserId()).toPrettyString());
                     client.saveToJSONFile(client.getUsernameHistory(inputUserId()), "data/usernameHistory.json");
                     break;
                 case (11):
-//                    System.out.println(client.getGroupBasicInfo(inputGroupId()).toPrettyString());
                     client.saveToJSONFile(client.getGroupBasicInfo(inputGroupId()), "data/groupBasicInfo.json");
                 default:
                     break;
@@ -104,11 +96,5 @@ public class Main {
         System.out.print("Введите № страницы: ");
         String page = sc.next();
         return page;
-    }
-    public static String inputPageSize () {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Введите количество сообщений: ");
-        String pageSize = sc.next();
-        return pageSize;
     }
 }

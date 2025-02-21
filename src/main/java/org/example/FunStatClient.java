@@ -129,11 +129,10 @@ public class FunStatClient {
 //    public JsonNode getUserMessages(String userId) throws IOException {
 //        return sendGetRequest("api/v1/users/" + userId + "/messages");
 //    }
-    public JsonNode getUserMessages(String username, String page, String pageSize) throws IOException {
+    public JsonNode getUserMessages(String userId, String page, String pageSize) throws IOException {
         HttpUrl url = HttpUrl.parse(BASE_URL)
                 .newBuilder()
-                .addPathSegments("api/v1/users/resolve_username")
-                .addQueryParameter("name", username)
+                .addPathSegments("api/v1/users/" + userId + "/messages")
                 .addQueryParameter("page", page)
                 .addQueryParameter("pageSize", pageSize)
                 .build();
