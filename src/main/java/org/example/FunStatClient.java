@@ -74,7 +74,6 @@ public class FunStatClient {
             }
 
             return objectMapper.readTree(responseBody);
-//        return sendGetRequest("api/v1/users/resolve_username?name=" + username);
         }
     }
 
@@ -115,7 +114,6 @@ public class FunStatClient {
             }
 
             return objectMapper.readTree(responseBody);
-//        return sendGetRequest("api/v1/users/basic_info_by_id?id=" + userId);
         }
     }
 
