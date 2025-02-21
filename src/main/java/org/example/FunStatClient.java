@@ -188,5 +188,6 @@ public class FunStatClient {
         String jsonString = jsonNode.toPrettyString();
         Path path = Paths.get(filePath);
         Files.write(path, jsonString.getBytes());
+        System.out.println("Файл выгружен");
     }
 }

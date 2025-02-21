@@ -34,7 +34,7 @@ public class Main {
         try {
             switch (number) {
                 case (1):
-                    client.saveToJSONFile(client.resolveUsername(inputUserUsername()), "resolveUsername.json");
+                    client.saveToJSONFile(client.resolveUsername(inputUserUsername()), "data/resolveUsername.json");
                     break;
                 case (2):
                     client.saveToJSONFile(client.getUserStatsMin(inputUserId()), "data/userStatsMin.json");
