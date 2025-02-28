@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class Main {
 
-    private final static int PAGE_SIZE = 1000;
+    private final static int PAGE_SIZE = 10000;
 
     public static void main(String[] args) {
         String helpText = "ПЕРЕЧЕНЬ ДОСТУПНЫХ API-МЕТОДОВ:\n" +
@@ -31,40 +31,42 @@ public class Main {
         int number = sc.nextInt();
 
         FunStatClient client = new FunStatClient();
+        Messages messages = new Messages();
         try {
             switch (number) {
                 case (1):
-                    client.saveToJSONFile(client.resolveUsername(inputUserUsername()), "data/resolveUsername.json");
+                    client.saveToJSONFile(client.resolveUsername(inputUserUsername()), "data/outputFiles/resolveUsername.json");
                     break;
                 case (2):
-                    client.saveToJSONFile(client.getUserStatsMin(inputUserId()), "data/userStatsMin.json");
+                    client.saveToJSONFile(client.getUserStatsMin(inputUserId()), "data/outputFiles/userStatsMin.json");
                     break;
                 case (3):
-                    client.saveToJSONFile(client.getUserStats(inputUserId()), "data/userStats.json");
+                    client.saveToJSONFile(client.getUserStats(inputUserId()), "data/outputFiles/userStats.json");
                     break;
                 case (4):
-                    client.saveToJSONFile(client.getUserBasicInfo(inputUserId()), "data/userBasicInfo.json");
+                    client.saveToJSONFile(client.getUserBasicInfo(inputUserId()), "data/outputFiles/userBasicInfo.json");
                     break;
                 case (5):
-                    client.saveToJSONFile(client.getUserGroupsCount(inputUserId()), "data/groupsCount.json");
+                    client.saveToJSONFile(client.getUserGroupsCount(inputUserId()), "data/outputFiles/groupsCount.json");
                     break;
                 case (6):
-                    client.saveToJSONFile(client.getUserMessages(inputUserId(), inputPage(), String.valueOf(PAGE_SIZE)), "data/messages.json");
+                    client.saveToJSONFile(client.getUserMessages(inputUserId(), inputPage(), String.valueOf(PAGE_SIZE)), "data/outputFiles/messages.json");
+                    messages.parseMassage();
                     break;
                 case (7):
-                    client.saveToJSONFile(client.getUserMessagesCount(inputUserId()), "data/messagesCount.json");
+                    client.saveToJSONFile(client.getUserMessagesCount(inputUserId()), "data/outputFiles/messagesCount.json");
                     break;
                 case (8):
-                    client.saveToJSONFile(client.getUserGroups(inputUserId()), "data/groups.json");
+                    client.saveToJSONFile(client.getUserGroups(inputUserId()), "data/outputFiles/groups.json");
                     break;
                 case (9):
-                    client.saveToJSONFile(client.getUserNamesHistory(inputUserId()), "data/namesHistory.json");
+                    client.saveToJSONFile(client.getUserNamesHistory(inputUserId()), "data/outputFiles/namesHistory.json");
                     break;
                 case (10):
-                    client.saveToJSONFile(client.getUsernameHistory(inputUserId()), "data/usernameHistory.json");
+                    client.saveToJSONFile(client.getUsernameHistory(inputUserId()), "data/outputFiles/usernameHistory.json");
                     break;
                 case (11):
-                    client.saveToJSONFile(client.getGroupBasicInfo(inputGroupId()), "data/groupBasicInfo.json");
+                    client.saveToJSONFile(client.getGroupBasicInfo(inputGroupId()), "data/outputFiles/groupBasicInfo.json");
                 default:
                     break;
             }

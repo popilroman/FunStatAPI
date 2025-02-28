@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 
 public class FunStatClient {
     private static final String BASE_URL = "https://funstat.info"; //Базовый url
-    private static final String API_KEY = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1Mzk3NTQ4MTMiLCJqdGkiOiIxMmY0YTZhMy03ZGI2LTRiZjMtYTZjOS1iMGIwN2ZmMTM0ZjciLCJleHAiOjE3NzEzNDY3Njl9.oq7WT75SUdcHj__B06Ls_m6EzFPZQ5plGWiBQGIeLTiPnLRtZnhKgPFK3nc9Auw8nmgZwmfYhcQGJVx5c_osQKRWdFVM65W4nFZtpgdaCtJHFHwgvOakFr1upWnzqI7NOLEQl7r_2RpYcn87ILCzUJGJ9kyHe7HdBasqBYUjhO4";
+    private static final String API_KEY = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI4MDUwNzQ4MjQ5IiwianRpIjoiMzNlODliNWQtN2UyNi00ZDhkLWE0MmQtNDE1NmYzMDMxOTVlIiwiZXhwIjoxNzcyMDg3MTU0fQ.t5OCpWJZJ_rO8izEgY9-HiHGnFDXpuKd1qlMQEBVo6D2dVVlWXg4RZJ5Vz3ddGyFMlW0sUrTkqSOrpJXbfeOc-on104EOTYziCCgJxTNXEghbyRTbQ90--dXQLXeFQiEROz6NFK0vBhAP728P0XXrg-yMU1CZRZddq8vpnDk3FA";
 
     private final OkHttpClient client;
     private final ObjectMapper objectMapper;
@@ -188,6 +188,6 @@ public class FunStatClient {
         String jsonString = jsonNode.toPrettyString();
         Path path = Paths.get(filePath);
         Files.write(path, jsonString.getBytes());
-        System.out.println("Файл выгружен");
+        System.out.println("✔\uFE0F Ответ выгружен в JSON-файл");
     }
 }
