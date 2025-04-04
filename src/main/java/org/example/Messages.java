@@ -36,6 +36,7 @@ public class Messages
                     if (text.toLowerCase().contains(key.toLowerCase())) {
                         System.out.println("КЛЮЧЕВОЕ СЛОВО: " + key);
                         int messageId = message.path("messageId").asInt();
+                        String messageDate = message.path("date").asText();
 
                         // Извлекаем данные группы
                         JsonNode group = message.path("group");
@@ -47,12 +48,13 @@ public class Messages
 
                         // Выводим найденную информацию
                         System.out.println("MessageId: " + messageId);
+                        System.out.println("Message Date: " + messageDate);
                         System.out.println("TEXT: " + text);
                         System.out.println("Group ID: " + groupId);
                         System.out.println("Group Title: " + groupTitle);
                         System.out.println("Group isPrivate: " + isPrivate);
                         System.out.println("Group Username: " + username);
-                        System.out.println("-----------------------------");
+                        System.out.println("---------------------------------------------------------------------------------------");
                     }
                 }
             }
