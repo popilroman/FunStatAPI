@@ -49,6 +49,7 @@ public class Messages
                         // Выводим найденную информацию
                         System.out.println("MessageId: " + messageId);
                         System.out.println("Message Date: " + messageDate);
+                        System.out.println("Message Link: " + "https://t.me/"+username+"/"+messageId);
                         System.out.println("TEXT: " + text);
                         System.out.println("Group ID: " + groupId);
                         System.out.println("Group Title: " + groupTitle);

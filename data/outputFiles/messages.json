@@ -3,7 +3,7 @@
   "tech" : {
     "request_cost" : 0,
     "current_ballance" : 756.75,
-    "request_duration" : "00:00:04.5487293"
+    "request_duration" : "00:00:00.1643037"
   },
   "paging" : {
     "total" : 8378,
@@ -25233,11 +25233,11 @@
     }
   }, {
     "date" : "2025-01-16T12:53:20Z",
-    "messageId" : 819310,
-    "replyToMessageId" : 819262,
+    "messageId" : 819311,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "нормально грамматику американского даже не знает",
+    "text" : "what is a* woman?\nDo* you think ... ?\n\nкороче необразованныи человек",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -25246,11 +25246,11 @@
     }
   }, {
     "date" : "2025-01-16T12:53:20Z",
-    "messageId" : 819311,
-    "replyToMessageId" : null,
+    "messageId" : 819310,
+    "replyToMessageId" : 819262,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "what is a* woman?\nDo* you think ... ?\n\nкороче необразованныи человек",
+    "text" : "нормально грамматику американского даже не знает",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -29874,11 +29874,11 @@
     }
   }, {
     "date" : "2025-01-05T15:07:53Z",
-    "messageId" : 807664,
-    "replyToMessageId" : 807663,
+    "messageId" : 807665,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "мы сдвг себе придумываем и аутизм",
+    "text" : "ну это очевидное влияние миллениалов тоже",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -29887,11 +29887,11 @@
     }
   }, {
     "date" : "2025-01-05T15:07:53Z",
-    "messageId" : 807665,
-    "replyToMessageId" : null,
+    "messageId" : 807664,
+    "replyToMessageId" : 807663,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "ну это очевидное влияние миллениалов тоже",
+    "text" : "мы сдвг себе придумываем и аутизм",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -55133,11 +55133,11 @@
     }
   }, {
     "date" : "2024-11-11T15:53:25Z",
-    "messageId" : 765943,
-    "replyToMessageId" : 765941,
+    "messageId" : 765944,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "в моем отряде был",
+    "text" : "почетныи участник моего клана клеш рояль",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -55146,11 +55146,11 @@
     }
   }, {
     "date" : "2024-11-11T15:53:25Z",
-    "messageId" : 765944,
-    "replyToMessageId" : null,
+    "messageId" : 765943,
+    "replyToMessageId" : 765941,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "почетныи участник моего клана клеш рояль",
+    "text" : "в моем отряде был",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -66430,11 +66430,11 @@
     }
   }, {
     "date" : "2024-10-10T06:32:57Z",
-    "messageId" : 738702,
-    "replyToMessageId" : 738701,
+    "messageId" : 738703,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "а в торонто бывает такое что свет выключают во всем раионе без причины",
+    "text" : "и неизвестно когда включат",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -66443,11 +66443,11 @@
     }
   }, {
     "date" : "2024-10-10T06:32:57Z",
-    "messageId" : 738703,
-    "replyToMessageId" : null,
+    "messageId" : 738702,
+    "replyToMessageId" : 738701,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "и неизвестно когда включат",
+    "text" : "а в торонто бывает такое что свет выключают во всем раионе без причины",
     "group" : {
       "id" : 1038261366,
       "title" : "Dev Seagulls Chat",
@@ -79599,11 +79599,11 @@
     }
   }, {
     "date" : "2024-01-26T14:21:19Z",
-    "messageId" : 31904,
-    "replyToMessageId" : 31902,
+    "messageId" : 31905,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "а у тебя скока коинов",
+    "text" : "10 млн",
     "group" : {
       "id" : 1614748770,
       "title" : "голубая лагуна",
@@ -79612,11 +79612,11 @@
     }
   }, {
     "date" : "2024-01-26T14:21:19Z",
-    "messageId" : 31905,
-    "replyToMessageId" : null,
+    "messageId" : 31904,
+    "replyToMessageId" : 31902,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "10 млн",
+    "text" : "а у тебя скока коинов",
     "group" : {
       "id" : 1614748770,
       "title" : "голубая лагуна",
@@ -91520,11 +91520,11 @@
     }
   }, {
     "date" : "2023-06-13T22:56:51Z",
-    "messageId" : 20137,
-    "replyToMessageId" : 20132,
+    "messageId" : 20138,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "нет",
+    "text" : "там ответы?",
     "group" : {
       "id" : 1614748770,
       "title" : "голубая лагуна",
@@ -91533,11 +91533,11 @@
     }
   }, {
     "date" : "2023-06-13T22:56:51Z",
-    "messageId" : 20138,
-    "replyToMessageId" : null,
+    "messageId" : 20137,
+    "replyToMessageId" : 20132,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "там ответы?",
+    "text" : "нет",
     "group" : {
       "id" : 1614748770,
       "title" : "голубая лагуна",
@@ -98605,32 +98605,6 @@
     }
   }, {
     "date" : "2022-11-09T16:42:39Z",
-    "messageId" : 47187,
-    "replyToMessageId" : 47180,
-    "mediaCode" : null,
-    "mediaName" : null,
-    "text" : "▶ Играть - Color Hit",
-    "group" : {
-      "id" : 1518670658,
-      "title" : "Не Группа лагеря 2022",
-      "isPrivate" : false,
-      "username" : "nadejdaCampus"
-    }
-  }, {
-    "date" : "2022-11-09T16:42:39Z",
-    "messageId" : 47181,
-    "replyToMessageId" : 47127,
-    "mediaCode" : null,
-    "mediaName" : null,
-    "text" : "👫 Играть с друзьями",
-    "group" : {
-      "id" : 1518670658,
-      "title" : "Не Группа лагеря 2022",
-      "isPrivate" : false,
-      "username" : "nadejdaCampus"
-    }
-  }, {
-    "date" : "2022-11-09T16:42:39Z",
     "messageId" : 47182,
     "replyToMessageId" : 47127,
     "mediaCode" : null,
@@ -98644,11 +98618,37 @@
     }
   }, {
     "date" : "2022-11-09T16:42:39Z",
+    "messageId" : 47187,
+    "replyToMessageId" : 47180,
+    "mediaCode" : null,
+    "mediaName" : null,
+    "text" : "▶ Играть - Color Hit",
+    "group" : {
+      "id" : 1518670658,
+      "title" : "Не Группа лагеря 2022",
+      "isPrivate" : false,
+      "username" : "nadejdaCampus"
+    }
+  }, {
+    "date" : "2022-11-09T16:42:39Z",
     "messageId" : 47184,
     "replyToMessageId" : 47180,
     "mediaCode" : null,
     "mediaName" : null,
     "text" : "▶ Играть - F1 Racer",
+    "group" : {
+      "id" : 1518670658,
+      "title" : "Не Группа лагеря 2022",
+      "isPrivate" : false,
+      "username" : "nadejdaCampus"
+    }
+  }, {
+    "date" : "2022-11-09T16:42:39Z",
+    "messageId" : 47181,
+    "replyToMessageId" : 47127,
+    "mediaCode" : null,
+    "mediaName" : null,
+    "text" : "👫 Играть с друзьями",
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
@@ -98904,11 +98904,11 @@
     }
   }, {
     "date" : "2022-10-20T17:53:12Z",
-    "messageId" : 44710,
+    "messageId" : 44708,
     "replyToMessageId" : null,
-    "mediaCode" : 4,
-    "mediaName" : "Image",
-    "text" : null,
+    "mediaCode" : null,
+    "mediaName" : null,
+    "text" : "@goodpersonhonestly",
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
@@ -98917,11 +98917,11 @@
     }
   }, {
     "date" : "2022-10-20T17:53:12Z",
-    "messageId" : 44708,
+    "messageId" : 44710,
     "replyToMessageId" : null,
-    "mediaCode" : null,
-    "mediaName" : null,
-    "text" : "@goodpersonhonestly",
+    "mediaCode" : 4,
+    "mediaName" : "Image",
+    "text" : null,
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
@@ -99242,11 +99242,11 @@
     }
   }, {
     "date" : "2022-10-08T11:11:53Z",
-    "messageId" : 43519,
-    "replyToMessageId" : 43517,
+    "messageId" : 43520,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "а бля",
+    "text" : "так много",
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
@@ -99255,11 +99255,11 @@
     }
   }, {
     "date" : "2022-10-08T11:11:53Z",
-    "messageId" : 43520,
-    "replyToMessageId" : null,
+    "messageId" : 43519,
+    "replyToMessageId" : 43517,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "так много",
+    "text" : "а бля",
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
@@ -108290,11 +108290,11 @@
     }
   }, {
     "date" : "2022-07-07T11:29:05Z",
-    "messageId" : 12626,
-    "replyToMessageId" : 12624,
+    "messageId" : 12627,
+    "replyToMessageId" : null,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "+++",
+    "text" : "Меня тоже бесил он как",
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
@@ -108303,11 +108303,11 @@
     }
   }, {
     "date" : "2022-07-07T11:29:05Z",
-    "messageId" : 12627,
-    "replyToMessageId" : null,
+    "messageId" : 12626,
+    "replyToMessageId" : 12624,
     "mediaCode" : null,
     "mediaName" : null,
-    "text" : "Меня тоже бесил он как",
+    "text" : "+++",
     "group" : {
       "id" : 1518670658,
       "title" : "Не Группа лагеря 2022",
